@@ -1,4 +1,4 @@
-        /* Panel de couleur pour les symboles des filtres*/
+        /* Panel de couleur pour les symboles des filtres */
 
         .color-1 {
             color: #0065FC
@@ -32,48 +32,7 @@
         .color-BG-4 {
             background: #F2F2F2
         }
-        
-        
-        /* RESET: */
-        html,
-        body,
-        header,
-        main,
-        footer,
-        nav,
-        address,
-        section,
-        div,
-        article,
-        ul,
-        ol,
-        li,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        img,
-        span,
-        a,
-        i,
-        pre,
-        code {
-            font-weight: unset;
-            line-height: unset;
-            padding: 0;
-            margin: 0;
-            border: 0
-        }
-        
-        ol,
-        ul {
-            list-style: none
-        }
-        
-        
+ 
         /* body */
         body {
             padding: 0 50px
