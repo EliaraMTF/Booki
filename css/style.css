@@ -1,4 +1,5 @@
-        /* PANEL COLORS: */
+        /* Panel de couleur pour les symboles des filtres*/
+
         .color-1 {
             color: #0065FC
         }
@@ -15,8 +16,9 @@
             color: #F2F2F2
         }
         
+        /* couleur du bouton "Rechercher" */
         .color-BG-1 {
-            background: #fc00c5
+            background: #0065FC
         }
         
         .color-BG-2 {
