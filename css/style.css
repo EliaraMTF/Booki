@@ -193,7 +193,7 @@
         
         /* Titre */
         #filters>span {
-            margin: 0 20px 0 0;
+            margin: 0 0px 0 0;
             height: 21px;
             font-family: 'Raleway', 'Arial';
             font-style: normal;
@@ -213,7 +213,7 @@
         }
         
         .btnFilter {
-            margin: 0 40px 0 0;
+            margin: 0 20px 0 0;
             padding: 0 20px;
             display: flex;
             flex-flow: row wrap;
