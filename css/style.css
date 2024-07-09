@@ -168,7 +168,7 @@ time, mark, audio, video
             line-height: 21px;
             letter-spacing: 0em;
             text-align: center;
-            color: #FFFFFF;
+            color: #ffffff;
             border: 1px solid #0065FC;
             border-radius: 0px 15px 15px 0px
         }
@@ -564,108 +564,113 @@ time, mark, audio, video
         
         
         /* Version Tablette */
-        @media screen and (max-width:1024px) {
-        
-            body {
-                padding: 0 25px
-            }
-        
-            .btnFilter {
-                margin: 0 30px 0 0
-            }
-        
-            /* Herbergements & Populaires */
-            main>section:first-child {
-                flex-flow: column nowrap
-            }
-        
-            #hebergements {
-                margin: 0 0 53px 0
-            }
-        
-            .card {
-                margin: 0 31px 30px 0
-            }
-        
-            #populaires {
-                min-width: 880px;
-                flex-flow: column nowrap;
-                align-items: flex-start
-            }
-        
-            #populaires>div {
-                display: flex;
-                flex-flow: row nowrap
-            }
-        
-            #populaires>div>i {
-                margin: 0 30px 0 0
-            }
-        
-            #populaires>div:last-child {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: left
-            }
-        
-            .card2 {
-                margin: 0 20px 48px 0;
-                min-width: 252px;
-                box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1)
-            }
-        
-            .card2 img {
-                min-width: 106px
-            }
-        
-            .containerCard2 h4 {
-                padding: 0 10px 0 0;
-                margin: 0;
-                font-size: 14px;
-                line-height: 16px
-            }
-        
-            .containerCard2 {
-                padding: 12px 5px 0 10px
-            }
-        
-            .containerCard2 p {
-                margin: 7px 0 0 0;
-                font-size: 13px;
-                line-height: 15px
-            }
-        
-            .containerCard2 span {
-                margin: 0 26px 15px 0
-            }
-        
-            /* Activités */
-            #activites h2 {
-                margin: 70px 0 15px 0
-            }
-        
-            .card3 {
-                width: 182px;
-                height: 267px
-            }
-        
-            .card3 img {
-                width: 182px;
-                height: 211px
-            }
-        
-            .card3 h4 {
-                padding: 19px
-            }
-        
-            .card3:last-child h4 {
-                padding: 19px 36px 19px 19px
-            }
-        
-            footer>ul {
-                margin: 0 100px 0 0
-            }
+        @media screen and (max-width: 1024px) {
+    
+        body {
+            padding: 0 25px;
         }
+
+        .btnFilter {
+            margin: 0 30px 0 0;
+        }
+
+        /* Herbergements & Populaires */
+        main > section:first-child {
+            flex-flow: column nowrap;
+        }
+
+        #hebergements {
+            margin: 0 0 53px 0;
+        }
+
+        .card {
+            margin: 0 31px 30px 0; 
+        }
+
+        #populaires {
+            min-width: 100%; /* Ajustement pour meilleure réactivité */
+            flex-flow: column nowrap;
+            align-items: flex-start;
+        }
+
+        #populaires > div {
+            display: flex;
+            flex-flow: row nowrap;
+            flex-wrap: wrap; /* Permet de s'adapter mieux aux écrans plus petits */
+        }
+
+        #populaires > div > i {
+            margin: 0 30px 0 0;
+        }
+
+        #populaires > div:last-child {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start; /* Alignement à gauche */
+        }
+
+        .card2 {
+            margin: 0 20px 48px 0;
+            min-width: 252px;
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+            flex: 1 1 auto; /* Pour une meilleure flexibilité */
+        }
+
+        .card2 img {
+            width: 100%; /* Adapter à la largeur du conteneur */
+            height: auto; /* Maintenir le ratio d'aspect */
+        }
+
+        .containerCard2 h4 {
+            padding: 0 10px 0 0;
+            margin: 0;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .containerCard2 {
+            padding: 12px 5px 0 10px;
+        }
+
+        .containerCard2 p {
+            margin: 7px 0 0 0;
+            ont-size: 13px;
+            line-height: 15px;
+        }
+
+        .containerCard2 span {
+            margin: 0 26px 15px 0;
+        }
+
+        /* Activités */
+        #activites h2 {
+            margin: 70px 0 15px 0;
+        }
+
+        .card3 {
+            width: 100%; /* Adapter à la largeur du conteneur */
+            max-width: 182px; /* Limite maximale pour garder la proportion */
+            height: auto; /* Maintenir le ratio d'aspect */
+            flex: 1 1 auto; /* Pour une meilleure flexibilité */
+        }
+
+        .card3 img {
+            width: 100%; /* Adapter à la largeur du conteneur */
+            height: auto; /* Maintenir le ratio d'aspect */
+        }
+
+        .card3 h4 {
+            padding: 19px;
+        }
+
+        .card3:last-child h4 {
+            padding: 19px 36px 19px 19px;
+        }
+
+        footer > ul {
+            margin: 0 100px 0 0;
+        }
+    }
         
         
         /* Version téléphone */
