@@ -1,4 +1,4 @@
-²html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -10,7 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video 
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -406,7 +406,8 @@ time, mark, audio, video {
             flex-flow: column;
             align-items: center;
             background-color: #F2F2F2;
-            padding: 42px 20px 1px 20px
+            padding: 42px 20px 1px 20px;
+            border-radius: 20px;
         }
         
         #populaires>div {
@@ -553,15 +554,17 @@ time, mark, audio, video {
             font-weight: 700;
             font-size: 18px;
             line-height: 21px
+
         }
         
         footer>ul {
-            margin: 0 250px 0 0
+            margin: 0 250px 0 0;            
+            list-style:none;
         }
         
         
         /* Version Tablette */
-        @media screen and (max-width:992px) {
+        @media screen and (max-width:1024px) {
         
             body {
                 padding: 0 25px
@@ -1002,6 +1005,7 @@ time, mark, audio, video {
             }
         
             footer>ul {
-                margin: 0
+                margin: 0;
+                list-style:none;
             }
         }
