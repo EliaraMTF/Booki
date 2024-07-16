@@ -153,7 +153,10 @@ time, mark, audio, video
             line-height: 21px;
             letter-spacing: 0em;
             text-align: center;
-            color:#000000;
+        }
+        
+        .input-black {
+            color: black;
         }
         
         .button-search {
