@@ -139,19 +139,21 @@ time, mark, audio, video
             align-items: center;
             background: #F2F2F2;
             border: 1px solid #F2F2F2;
-            border-radius: 15px 0px 0px 15px
+            border-radius: 15px 0px 0px 15px;
         }
         
         .content-search input[type="text"] {
             border: 1px solid #F2F2F2;
             height: 49px;
             padding: 0 0 0 17px;
-            font-family: Raleway;
+            font-family: 'Raleway';
+            font-style:normal;
             font-size: 18px;
             font-weight: 700;
             line-height: 21px;
             letter-spacing: 0em;
-            text-align: left
+            text-align: center;
+            color:#000000;
         }
         
         .button-search {
