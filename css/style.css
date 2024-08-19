@@ -19,10 +19,11 @@ time, mark, audio {
 	font: inherit;
 	vertical-align: baseline;
 }
-  
+
   body {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: #0065fc;
   }
   
   /* Custom Properties */
@@ -276,6 +277,10 @@ time, mark, audio {
     cursor: pointer;
     transition: all 0.2s ease-in-out; /* Ajouter une transition pour un effet plus doux */
   }
+  .card__main--container{
+    display: flex;
+    flex-direction: column;
+  }
   
   .card__main a {
     color: var(--black);
@@ -491,7 +496,6 @@ time, mark, audio {
     display: flex;
     padding: 20px 70px 58px 70px;
     margin-bottom: 27px;
-    background-color: #F2F2F2;
   }
   
   footer h3 {
@@ -557,11 +561,12 @@ time, mark, audio {
       width: 100%;
       margin: 0;
       padding: 42px 40px;
-
+      background-color: #F2F2F2;
     }
 
     .offers__main {
         margin-bottom: 40px; /* Ajout d'un espacement entre les sections */
+        background-color: #F2F2F2;
       }
 
     .card__spensored--container{
@@ -596,6 +601,11 @@ time, mark, audio {
     }
   
     /* Activités */
+ 
+    .activities{
+        margin: 80px 20px 0 20px;
+        background-color:#ffffff;
+      }
   
     .card__activity:nth-child(-n + 3) {
       margin-right: 38px;
@@ -683,7 +693,7 @@ time, mark, audio {
     }
   
     
-    /* Hébergements */
+    /* Hébergement et Populaire */
     
     .offers {
       flex-direction: column-reverse;
@@ -694,27 +704,28 @@ time, mark, audio {
       width: 100%;
       margin: 80px 0;
       padding: 0;
+      background-color: #F2F2F2;
     }
-  
-    .offers__main{
-      width: 100%;
-      padding: 0;
-    }
-  
     .first-row , .second-row{
-      flex-direction: column;
-      gap: 30px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .offers__main {
+        width: 100%;
+        margin: 80px 0;
+        padding: 0;
+        background-color: #FFFFFF
     }
   
     .card__main{
-      width: 100%;
+      width: 98%;
     }
-  
-    
     /* Activités à marseille */
     
     .activities{
       margin: 80px 20px 0 20px;
+      background-color:#ffffff;
     }
     .activities-row {
       display: flex;
