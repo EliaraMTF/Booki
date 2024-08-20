@@ -1,17 +1,5 @@
 /* Reset CSS */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,7 +11,7 @@ time, mark, audio {
   body {
     max-width: 1440px;
     margin: 0 auto;
-    /*background-color: #0065fc*/
+   
   }
   
   /* Custom Properties */
@@ -212,6 +200,12 @@ time, mark, audio {
     background-color: var(--light-blue);
     cursor: pointer;
   }
+
+  .caca{
+    display: flex;
+    align-items: row;
+    gap: 15px;
+  }
   
   /* Info bar */
   
@@ -290,7 +284,7 @@ time, mark, audio {
   
   .card__main img {
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
     height: 124px;
     object-fit: cover;
   }
@@ -473,7 +467,7 @@ time, mark, audio {
     height: 389px;
     object-fit: cover;
     box-sizing: border-box;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
   }
   
   .card__description--activity h3 {
@@ -650,7 +644,11 @@ time, mark, audio {
     }
   
     .search-bar__container {
-      margin: 0px 20px;
+      margin: 0px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: first baseline;
+      justify-items: center;
     }
   
     .search-bar--button i {
@@ -676,12 +674,13 @@ time, mark, audio {
       gap: 15px;
       flex-direction: column;
       align-items: flex-start;
+      width: 100%;
     }
   
     .filter-bar__btns{
+    justify-content: flex-start;
       flex-wrap: wrap;
-      row-gap: 20px;
-      column-gap: 3%;
+      row-gap: 10px;
       padding: 0;
     }
   
@@ -689,9 +688,18 @@ time, mark, audio {
       flex: 1 1 47%;
       font-size: 14px;
       justify-content: flex-start;
-      padding: 4px 16px;
+      padding: 4px 5px;
     }
-  
+    .caca{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
     
     /* Hébergement et Populaire */
     
@@ -702,9 +710,9 @@ time, mark, audio {
   
     .offers__spensored{
       width: 100%;
-      margin: 80px 0;
+      margin: 25px 0;
       padding: 0;
-      background-color: #F2F2F2;
+      background-color: #FFFFFF;
     }
     .first-row , .second-row{
         flex-direction: column;
@@ -713,38 +721,42 @@ time, mark, audio {
 
     .offers__main {
         width: 100%;
-        margin: 80px 0;
+        margin: 25px 0;
         padding: 0;
-        background-color: #FFFFFF
+        background-color: green;
+        box-shadow: none;
+        border-radius: none;
     }
   
     .card__main{
-      width: 98%;
+      width: 96%;
     }
     /* Activités à marseille */
     
     .activities{
-      width: 100%;
-      margin: 80px 0;
-      padding: 0;
-      background-color:#ffffff;
+      width: auto;
+      margin: 20px 20px;
+      padding: 10px;
+      background-color:violet;
     }
     .activities-row {
       flex-direction: column;
-      gap: 30px;
+      gap: 15px;
     }
     .card__activity{
-      width: 98%;
+      width: 100%;
+      margin-left: -10px;
+      padding-left: 10px;
     }
     .activities img {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0px;
-        
-        width: 315px;
+
+        min-width: 103%;
+        max-width: 103.5%;
         height: 141px;
+        margin-left: -10px;
+        
     
     }
     /* Footer */
