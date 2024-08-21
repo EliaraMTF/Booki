@@ -215,7 +215,7 @@ time, mark, audio {
 
   .Filtre2{
     display: flex;
-    align-items: row;
+    align-items: center;
     gap: 15px;
   }
   
@@ -736,7 +736,6 @@ time, mark, audio {
         margin: 25px 0;
         padding: 0;
         box-shadow: none;
-        border-radius: none;
     }
   
     .card__main{
