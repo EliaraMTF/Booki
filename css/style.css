@@ -201,7 +201,7 @@
     cursor: pointer;
   }
 
-  .caca{
+  .Filtre2{
     display: flex;
     align-items: row;
     gap: 15px;
@@ -690,7 +690,7 @@
       justify-content: flex-start;
       padding: 4px 5px;
     }
-    .caca{
+    .Filtre2{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
