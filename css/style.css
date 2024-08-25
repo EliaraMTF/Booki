@@ -216,7 +216,8 @@ time, mark, audio {
     cursor: pointer;
   }
 
-  .Filtre2{
+  .groupe1,
+  .groupe2{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -695,25 +696,23 @@ time, mark, audio {
     /* Filter bar */
   
     .filter-bar {
-      margin-left: auto;
+      width: 100%;
       gap: 15px;
       flex-direction: column;
       align-items: flex-start;
-      width: 100%;
       box-sizing: border-box;
-      padding-right: 3px;
     }
   
     .filter-bar__btns{
-      justify-content: flex-start;
       flex-wrap: wrap;
       row-gap: 10px;
-      padding: 0;
+      margin-left: 1px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
     }
   
     .filter-bar__btn{
-      
-      flex: 1 1 47%;
+      width: 150px;
       font-size: 14px;
       justify-content: start;
       padding: 4px 5px;
@@ -721,18 +720,6 @@ time, mark, audio {
     }
     .filter-bar__btn i {
       margin-left: 10px;
-    }
-    
-    .Filtre2{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      width: max-content;
-      min-width: 320px;
-      margin-left: 5px;
-      margin-right: 5px;  
-      
     }
     
     /* Info bar */
