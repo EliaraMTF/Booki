@@ -341,11 +341,7 @@ time, mark, audio {
     padding: 0;
     border: none;
     cursor: pointer;
-  }
-  
-  .show-more__btn:hover {
-    color: var(--main-blue);
-    background-color: white;
+    /*background-color: #FFFFFF;*/
   }
   
   .first-row,
@@ -505,17 +501,17 @@ time, mark, audio {
   
   footer {
     display: flex;
-    padding: 20px 70px 58px 70px;
-    margin-bottom: 27px;
+    justify-content: space-between;
   }
   
   footer h3 {
     font:  700 18px "Raleway", sans-serif;
     margin-bottom: 20px;
   }
-  
-  .footer__column:nth-child(-n + 2) {
+
+  .footer__column {
     width: 30%;
+    padding-left: 6%;
   }
   
   .link-list li:nth-child(-n + 2) {
@@ -760,8 +756,8 @@ time, mark, audio {
     }
 
     .offers__main {
-        width: 100%;
-        margin: 25px 0;
+        width: auto;
+        margin: auto;
         padding: 0;
         box-shadow: none;
         background-color: #FFFFFF;
@@ -776,9 +772,10 @@ time, mark, audio {
     
     .activities{
       width: auto;
-      margin: auto;
+      margin: 16px;
       padding: 10px;
-      border-radius:0%
+      border-radius:0%;
+      margin-top: 10px;
     }
     .activities-row {
       flex-direction: column;
@@ -805,7 +802,7 @@ time, mark, audio {
       background-color: #F2F2F2;
     }
   
-    .footer__column:nth-child(-n + 2){
+    .footer__column{
       width: 100%;
     }
 }
