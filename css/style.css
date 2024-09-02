@@ -73,11 +73,17 @@ time, mark, audio {
       display: block;
       width: 100%; /* Occupe toute la largeur de l'élément */
       height: 2px; /* Épaisseur du trait */
-      background-color: var(--main-blue); /* Couleur du trait */
+      background-color: #f2f2f2; /* Couleur du trait */
       position: absolute;
       left: 0;
   }
 
+  nav li.highlight:hover:before,
+  nav li.highlight:hover:after {
+    background: #0065FC;
+
+
+  }
   nav li.highlight::before {
     top: 0; /* Positionne le trait en haut */
 }
