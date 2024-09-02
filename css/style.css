@@ -633,13 +633,19 @@ time, mark, audio {
     }
   
     .card__activity:nth-child(-n + 3) {
-      margin-right: 38px;
+      margin-right: 20px;
     }
     .activities img {
-      height: 211px;
+      height: 180px;
     }
     .activities h2 {
-      margin-bottom: 34px;
+      margin-bottom: 30px;
+    }
+
+    .card__description--activity h3 {
+      font:  700 16px "Raleway", sans-serif;
+      padding: 20px 36px 21px 19px;
+      line-height: 18,78px;
     }
   }
 
