@@ -12,12 +12,12 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   box-sizing: border-box;
 }
 
@@ -39,7 +39,7 @@ time, mark, audio {
   header {
     margin: 0px 55px 37px 55px;
   }
- 
+
   nav {
     display: flex;
     flex-direction: row;
@@ -208,6 +208,18 @@ time, mark, audio {
     background-color: white;
   }
   
+  .Familial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font:  700 17px "Raleway", sans-serif;
+    border: 2px solid var(--grey);
+    border-radius: 25px;
+    height: 45px;
+    padding: 4px 20px;
+    background-color: white;
+  }
+
   .filter-bar__btn:active{
     transform: translateY(2px);
   }
@@ -285,7 +297,9 @@ time, mark, audio {
   .offers__main h2 {
     margin-bottom: 23px;
   }
-  
+  .price {
+    font-weight: bold;
+  }
   .card__main {
     width: calc(100% / 3);
     border: 5px solid #ffffff;
@@ -511,6 +525,7 @@ time, mark, audio {
     display: flex;
     justify-content: space-between;
     padding-right: 134px;
+    background-color: #F2F2F2;
   }
   
   footer h3 {
@@ -625,7 +640,7 @@ time, mark, audio {
     }
   
     /* Activités */
- 
+
     .activities{
       margin: 16px;
       padding: 10px;
@@ -699,62 +714,97 @@ time, mark, audio {
       display: block;
   }
   
-    .search-bar__container {
-      margin: 0px 0px;
-      display: flex;
-      flex-direction: column;
-      align-items: first baseline;
-      justify-items: center;
-    }
-    .search-bar__titles{
-      margin-left: 10px;
-    }
+      .search-bar__container {
+          width: 100%; /* Prend toute la largeur disponible */
+          margin: 0; /* Retirer les marges si nécessaire */
+          padding: 0; /* Retirer le padding si nécessaire */
+      }
   
-    .search-bar--button i {
-      display: block;
-    }
+      .input-search {
+          display: flex; /* S'assurer que l'élément utilise flexbox */
+          width: 100%; /* Prend toute la largeur disponible */
+          flex-direction: row; /* Les éléments enfants en ligne */
+      }
   
-    .search-bar--button span {
-      display: none;
-    }
+      .input-search input {
+          flex: 1; /* Prend toute la largeur disponible */
+          font-size: 16px; /* Ajustez la taille de la police si nécessaire */
+          padding: 14px 10px; /* Ajustez le padding si nécessaire */
+      }
   
-    .input-search {
-      width: 100%;
-    }
-  
-    .input-search input {
-      font-size: 16px;
-      width: 100%;
-    }
+      .search-bar--button {
+          flex-shrink: 0; /* Empêche le bouton de se réduire */
+          font-size: 16px; /* Ajustez la taille de la police si nécessaire */
+          padding: 14px 16px; /* Ajustez le padding si nécessaire */
+      }
+
+      .search-bar--button i {
+        display: block;
+      }
+    
+      .search-bar--button span {
+        display: none;
+      }
     /* Filter bar */
   
     .filter-bar {
-      width: 96%;
-      gap: 15px;
+      display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      box-sizing: border-box;
-    }
-  
-    .filter-bar__btns{
-      flex-wrap: wrap;
-      row-gap: 10px;
-      margin-left: 1px;
-      margin-bottom: 20px;
-      box-sizing: border-box;
-    }
-  
-    .filter-bar__btn{
-      width: 140px;
+      align-items: stretch;
+      gap: 10px;
+      padding: 0 10px;
+  }
+
+  .filter-bar__btns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .filter-bar__btn,
+  .filter-bar__btn--2 {
+      width: 100%;
       font-size: 14px;
-      justify-content: start;
-      padding: 4px 5px;
+      padding: 8px 10px;
+      margin: 0;
+      border-radius: 25px;
+      text-align: center;
       background-color: white;
-    }
-    .filter-bar__btn i {
-      margin-left: 10px;
-    }
-    
+      border: 2px solid var(--grey);
+      box-sizing: border-box;
+  }
+
+  .filter-bar__btn--2 {
+      /* Appliquer des styles spécifiques si nécessaire, sinon ils hériteront des styles de .filter-bar__btn */
+  }
+
+  .filter-bar__btn:hover,
+  .filter-bar__btn--2:hover {
+      background-color: var(--light-blue);
+      cursor: pointer;
+  }
+
+  .filter-bar__btn:active,
+  .filter-bar__btn--2:active {
+      transform: translateY(2px);
+  }
+
+  .groupe1, .groupe2 {
+    flex-direction: row; /* Faire en sorte que les groupes s'empilent sur mobile */
+    align-items: stretch; /* Aligner les éléments pour qu'ils occupent tout l'espace */
+    width: 100%; /* Prendre toute la largeur */
+  }
+
+  .Familial {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px 24px 4px 0px;
+    margin: 0;
+    border-radius: 25px;
+    text-align: right;
+    background-color: white;
+    border: 2px solid var(--grey);
+    box-sizing: border-box;
+  }
     /* Info bar */
 
     .info-bar {
