@@ -773,10 +773,6 @@ time, mark, audio {
       box-sizing: border-box;
   }
 
-  .filter-bar__btn--2 {
-      /* Appliquer des styles spécifiques si nécessaire, sinon ils hériteront des styles de .filter-bar__btn */
-  }
-
   .filter-bar__btn:hover,
   .filter-bar__btn--2:hover {
       background-color: var(--light-blue);
